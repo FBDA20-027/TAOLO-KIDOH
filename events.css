@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'times new roman', sans-serif;
+  background-image: url(./images/angels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+section{
+  margin-top: 50px;
+}
+
+.logo-container,
+.maikano,
+.cart {
+  display: flex;
+}
+.logo-container {
+  flex: 1;
+}
+.logo {
+  font-weight: 50;
+  margin: 1px;
+}
+nav {
+  flex: 2;
+}
+.maikano {
+  justify-content: space-around;
+  list-style: none;
+
+}
+.maikano-link {
+  color: brown;
+  box-shadow: teal;
+  font-size: 18px;
+  text-decoration: none;
+}
+.maikano-link:hover {
+  color: teal;
+}
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+.taolo
+{
+padding:30px;
+font-family:'arial';
+font-size:16px;
+font-weight:300;
+line-height:24px;
+margin-bottom: 55px;
+color: whitesmoke;
+}
+.taolo p
+{
+margin-bottom:15px;
+}
+.kidoh
+{
+width:450px;
+position:relative;
+box-shadow:0 0 5px rgba(0,0,0,.4);
+background-color:#fff;
+overflow:hidden;
+border-radius:8px;
+margin-bottom:10px;
+}
+.kidoh:before
+{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:8px solid #fff;
+z-index:2;
+overflow:hidden;
+box-sizing:border-box;
+}
+.kidoh img
+{
+width:100%;
+height:auto;
+border-radius:8px;
+transform:scale(1) rotate(0deg);
+transition:all .5s linear;
+}
+.kidoh:hover img
+{
+transform:scale(1.1) rotate(-5deg);
+}
+.kidoh.right
+{
+float:right;
+margin-left:20px;
+}
+.kidoh.left
+{
+float:left;
+margin-right:20px;
+}
+@media screen and (max-width:767px)
+{
+.kidoh.right
+{
+float:none;
+margin-left:0px;
+}
+.kidoh.left
+{
+float:none;
+margin-right:0px;
+}
+.kidoh{
+width:100%;
+}
+}

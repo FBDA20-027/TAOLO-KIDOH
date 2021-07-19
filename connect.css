@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'times new roman', sans-serif;
+  background-image: url(./images/angels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,
+.maikano,
+.cart {
+  display: flex;
+}
+.logo-container {
+  flex: 1;
+}
+.logo {
+  font-weight: 50;
+  margin: 1px;
+}
+nav {
+  flex: 2;
+}
+.maikano {
+  justify-content: space-around;
+  list-style: none;
+
+}
+.maikano-link {
+  color: brown;
+  box-shadow: teal;
+  font-size: 18px;
+  text-decoration: none;
+}
+.maikano-link:hover {
+  color: teal;
+}
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.signup-box {
+  width: 360px;
+  height: 540px;
+  margin: auto;
+  background-color: teal;
+  border-radius: 3px;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+a[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  text-align: right;
+}
+
+
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .present {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+}
+

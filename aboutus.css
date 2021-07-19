@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'times new roman', sans-serif;
+  background-image: url(./images/angels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,
+.maikano,
+.cart {
+  display: flex;
+}
+.logo-container {
+  flex: 1;
+}
+.logo {
+  font-weight: 50;
+  margin: 1px;
+}
+nav {
+  flex: 2;
+}
+.maikano {
+  justify-content: space-around;
+  list-style: none;
+
+}
+.maikano-link {
+  color: brown;
+  box-shadow: teal;
+  font-size: 18px;
+  text-decoration: none;
+}
+.maikano-link:hover {
+  color: teal;
+}
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.textbox{
+  position: relative;
+  max-width: 750px;
+  z-index: 2;
+  margin-left: 250px;
+  margin-top: 60px;
+}
+.textbox h2{
+  color: #fff;
+  font-size: 3em;
+  margin-left: 180px;
+}
+.textbox p{
+  color: #fff;
+  font-size: 1.1em;
+  margin: 5px 0 25px;
+  text-transform: none;
+}
+.textbox a{
+  position: relative;
+  display: inline-block;
+  color: gold;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .present {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+}
+
